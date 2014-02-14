@@ -16,26 +16,26 @@ This is a list of URLs to all of the athlete bios from Sochi's search engine.
 
 I got this list by running the following JavaScript in Chrome's Dev Tools console. When it's done it copies a list of URLs separated by commas to your clipboard. 
 
-jQuery(document).ready(function($){
-	var iterations = 0;
-	var output = '';
-	
-	function pushTheMoreButton() {
-		if( iterations < 191 ) {
-			$('#show-more-button a').trigger('click');
-			iterations++;
-		} else {
-			window.clearInterval(intervalID);
-			alert( 'all done!' );
-			
-			$('.athletes .athlete a').each( function() {
-				output+= this.href + ', ';
-			});
-			copy(output);
+	jQuery(document).ready(function($){
+		var iterations = 0;
+		var output = '';
+		
+		function pushTheMoreButton() {
+			if( iterations < 191 ) {
+				$('#show-more-button a').trigger('click');
+				iterations++;
+			} else {
+				window.clearInterval(intervalID);
+				alert( 'all done!' );
+				
+				$('.athletes .athlete a').each( function() {
+					output+= this.href + ', ';
+				});
+				copy(output);
+			}
 		}
-	}
-	intervalID = window.setInterval(pushTheMoreButton, 500);
-});
+		intervalID = window.setInterval(pushTheMoreButton, 500);
+	});
 
 ### athletes-search-full.html ###
 This is the full web page with all of the athlete links visible. Use this if you don't want to wait for the script above to click the "More" button 191 times.
