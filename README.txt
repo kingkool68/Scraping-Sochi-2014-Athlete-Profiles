@@ -40,6 +40,6 @@ jQuery(document).ready(function($){
 ## athletes-search-full.html
 This is the full web page with all of the athlete links visible. Use this if you don't want to wait for the script above to click the "More" button 191 times.
 
-Uses http://adodb.sourceforge.net/ and simple_html_dom.php
+Uses http://adodb.sourceforge.net/ and http://simplehtmldom.sourceforge.net/
 
 Enjoy!
