@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.13-log)
 # Database: sochidev
-# Generation Time: 2014-02-18 15:47:15 +0000
+# Generation Time: 2014-02-18 15:58:31 +0000
 # ************************************************************
 
 
@@ -26,11 +26,11 @@
 DROP TABLE IF EXISTS `athlete-bios`;
 
 CREATE TABLE `athlete-bios` (
-  `first_name` text NOT NULL,
-  `last_name` text NOT NULL,
+  `first_name` varchar(25) NOT NULL DEFAULT '',
+  `last_name` varchar(25) NOT NULL DEFAULT '',
   `gender` enum('Female','Male') DEFAULT NULL,
   `sport` text,
-  `birth_place` text,
+  `birth_place` varchar(75) DEFAULT '',
   `age` tinyint(2) unsigned DEFAULT NULL,
   `birth_date` date DEFAULT NULL,
   `birth_year` int(4) unsigned DEFAULT NULL,
@@ -47,8 +47,8 @@ CREATE TABLE `athlete-bios` (
   `medals_gold` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `medals_silver` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `medals_bronze` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `photo` text,
-  `url` varchar(255) NOT NULL DEFAULT 'PRIMARY',
+  `photo` varchar(75) DEFAULT '',
+  `url` varchar(70) NOT NULL DEFAULT 'PRIMARY',
   `last_modified` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`url`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
