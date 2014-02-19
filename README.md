@@ -1,4 +1,6 @@
-There is lots of data about the 2014 Winter Olympic athletes available at http://www.sochi2014.com/en/athletes-search but it's not in a standardized format that is easy to work with. This scraper parses the athlete bio pages and stores the data in a simple database for better analysis. 
+There is lots of data about the 2014 Winter Olympic athletes available at http://www.sochi2014.com/en/athletes-search but it's not in a standardized format that is easy to work with. This scraper parses the athlete bio pages and stores the data in a simple database for better analysis.
+
+This was used for generating the findings in this post http://www.pewresearch.org/fact-tank/2014/02/19/how-many-sochi-athletes-are-competing-for-a-country-that-is-not-their-birth-nation/ 
 
 ## I Just Want The Data ##
 Check the `final data` folder for a `csv`, `json`, and a `sql dump` of the data.
