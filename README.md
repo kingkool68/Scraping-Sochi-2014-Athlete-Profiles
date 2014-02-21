@@ -3,7 +3,7 @@ There is lots of data about the 2014 Winter Olympic athletes available at http:/
 This was used for generating the findings in this post http://www.pewresearch.org/fact-tank/2014/02/19/how-many-sochi-athletes-are-competing-for-a-country-that-is-not-their-birth-nation/ 
 
 ## I Just Want The Data ##
-Check the `final data` folder for a `csv`, `json`, and a `sql dump` of the data.
+Check the `final data` folder for a `csv`, `json`, and a `sql dump` of the data. Or view the public [Google Doc version](https://docs.google.com/spreadsheet/ccc?key=0AqH3Ey7_dlREdEs4dk5OWHpxTnBMcDF5NkxvX1RKNnc&usp=sharing)
 
 ## How To Run the Scraper ##
 0. Clone this repo
